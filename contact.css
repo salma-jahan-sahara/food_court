@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Playfair+Display:wght@900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+}
+/* Section one */
+
+.section__contact{
+    /* background-color: #D3D3D3; */
+    height: 60vh;
+}
+.contact__options img{
+    height: 90px;
+    width: 90px;
+    border: 1px solid #000;
+    border-radius: 50px;
+    margin-top: 40px;
+    /* background-color: red; */
+}
+.contact__title{
+    /* background-color: #fff; */
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: bolder;
+    text-shadow: 1px 0px;
+}
+.size{
+    height: 240px;
+    width: 240px;
+    border: 1px solid #fff;
+    border-radius: 7px;
+    margin: 5rem 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 5px 5px 5px #D3D3D3;
+}
+.contact__options p{
+    /* background-color: chartreuse; */
+    margin: 1px;
+    font-size: 15px;
+    font-weight: 500;
+}
+.address{
+    background-color: #ffffff;
+}
+.email{
+    background-color: #ffffff;
+}
+.phone{
+    background-color: #ffffff;
+}
+.opening{
+    background-color: #ffffff;
+}
+/* Section two */
+.contact{
+    background-color: #D3D3D3;
+    height: 80vh;
+    width: 100vw;
+}
+.section__contact-form{
+    /* background-color: cadetblue; */
+    height: 70vh;
+    /* width: 100vw; */
+}
+
+.contact__us{
+    background-color: #D3D3D3;
+    
+    width: 80%;
+    text-align: center;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.msg{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.msg button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 2px;
+    font-size: small;
+    margin: 15px 30px;
+}
+.form input{
+    border: none;
+    height: 40px;
+    width: 241px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 2px;
+    font-size: small;
+    margin: 10px 0px;
+
+}
+/* .form input:focus{
+    border: 1px solid rgb(71, 2, 2);
+} */
+.msg textarea{
+    border: none;
+    height: 150px;
+    width: 755px;
+    padding: 7px 13px;
+    border: none;
+    border-radius: 2px;
+    font-size: small;
+}

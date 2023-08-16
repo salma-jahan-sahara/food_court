@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Playfair+Display:wght@900&display=swap');
+:root {
+    --bs-blue: #0d6efd;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #9d1926;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #343a40;
+    --bs-primary: #0d6efd;
+    --bs-secondary: #6c757d;
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+    --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+  }
+.title__second{
+  /* font-family: 'Dosis', sans-serif; */
+  font-family: 'Playfair Display', serif;
+  color: var(--bs-red);
+}
+.card .category__img{
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+}
+.center{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  gap: 1rem;
+}
+.display__grid-6{
+  display: grid;
+  grid-template-columns: repeat(6,auto);
+  justify-content: space-evenly;
+}
+.card:hover{
+  border: 1px solid var(--bs-red);
+}
+.best__food{
+  height: 60vh;
+}
+.card__category img {
+  transition: transform 0.3s, box-shadow 0.3s; /* Adding transitions for smooth effect */
+}
+
+.card__category:hover img {
+  transform: scale(1.1); /* Scale the image by 10% on hover (you can adjust the value) */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a box shadow on hover */
+}
+.display__grid-2{
+  display: grid;
+  grid-template-columns: repeat(2,auto);
+  justify-content: space-between;
+}
+.footer__slider p::before{
+  content: " ";
+  height: 10px;
+  width: 100px;
+  color: #0d6efd;
+}
+/* Style the container */
+.sponsor-text {
+  position: relative;
+  text-align: center; /* Center-align the text */
+  margin-top: 50px;
+}
+
+/* Style the line before and after the paragraph */
+.sponsor-text p::before,
+.sponsor-text p::after {
+  content: "";
+  position: absolute;
+  width: 500px; /* Adjust the width of the lines */
+  height: 2px; /* Adjust the height and thickness of the lines */
+  background-color: #D3D3D3; /* Line color */
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.sponsor-text p::before {
+  left: 0;
+}
+
+.sponsor-text p::after {
+  right: 0;
+}
+.container__sponsor{
+  margin-top: 80px;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  width: auto;
+}
+.container__sponsor .sponsor__slider-track{
+  animation: scroll 40s linear infinite;
+  display: flex;
+  width: calc(200px *14);
+}
+@keyframes scroll {
+  0%{
+    transform: translate(0);
+  }
+  100%{
+    transform: translate(calc(-200px * 7));
+  }
+}
+.display__grid-4{
+  display: grid;
+  grid-template-columns: repeat(4,auto);
+  justify-content: space-evenly;
+}
+/* delivery section */
+.size{
+  height: 80px;
+  width: 70px!important;
+  margin-left: 1rem!important;
+  margin-top: 3rem!important;
+}
+.card__delivery{
+  /* background-color: #000; */
+  margin-left: 2rem!important;
+  padding: 15px 15px;
+  border-top: none!important;
+  border-bottom: none!important;
+  border-left: none!important;
+  border-right: #fff!important;
+  gap: 0!important;
+}
+/* about Section */
+.about__content-center{
+  gap: 12px;
+}
+.about__us img{
+  height: 450px;
+  width: 450px;
+  margin-left: 140px;
+}
+.food__menu{
+  background: url(./img/bg-menu.jpeg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+.left__menu img{
+  height: 100px;
+  width: 100px;
+  border-radius: 50px!important;
+  margin: 2rem 5rem;
+  border: 5px solid #6c757d;
+}
+.left__menu-details{
+  position: relative;
+  margin-top: 1rem!important;
+  /* background-color: #198754; */
+
+}
+.price__item {
+  position: absolute;
+  background-color: bisque;
+  top: 10px;
+  left: 199px;
+  right: 75px;
+  bottom: 40px;
+  height: 32px;
+  padding: 5px 6px;
+}
+.item-title{
+  color: var(--bs-gradient);
+  font-family: var(--bs-font-monospace);
+}
