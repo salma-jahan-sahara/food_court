@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Playfair+Display:wght@900&display=swap');
+
 :root {
     --bs-blue: #0d6efd;
     --bs-indigo: #6610f2;
@@ -25,6 +26,11 @@
     --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   }
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .title__second{
   /* font-family: 'Dosis', sans-serif; */
   font-family: 'Playfair Display', serif;
