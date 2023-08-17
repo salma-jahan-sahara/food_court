@@ -38,6 +38,10 @@ body{
     /* background-color: cadetblue; */
     margin-top: 5rem;
 }
+.title__second{
+    font-family: 'Playfair Display', serif;
+    color: var(--bs-red);
+}
 /* uncomment later */
 .card__dashed:hover{
     /* border: none!important; */

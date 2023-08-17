@@ -13,11 +13,12 @@
             referrerpolicy="no-referrer"
         />
         <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-        rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-        crossorigin="anonymous"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous"
         />
+        <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>¬
     </head>
     <body>
         <header>
@@ -27,10 +28,185 @@
         <main>
         <section class="menu">
             <div class="container">
+                <!-- Page Title Start-->
+                <h6 class="text-center fw-bolder fs-5 mt-5 title__second">Food Categories</h6>
+                <h2 class="text-center fs-1 fw-bold mb-5">Find Your Best Taste</h2>
+                <!-- Page Title Ends -->
                 <div class="row row-cols-1 row-cols-md-3 g-4">
                     <div class="col">
                         <div class="card">
                             <img src="img/menu/pizza-menu.jpg" class="card-img-top" alt="Pizza Menu" />
+                            <div class="card-body">
+                                <!-- changes -->
+                                <div class="card card__dashed">
+                                    <div class="row g-0">
+                                        <div class="col-md-4 item__img">
+                                            <img src="img/pizza/pizza.jpeg" class="img-fluid rounded-circle" alt="Chicken Pizza">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <ul class="list-group">
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center gap-1">
+                                                        <h5 class="card-title fw-bold">Chicken Pizza</h5><span class="badge bg-danger rounded-pill">BDT <span id="food-price_1">240</span></span>
+                                                    </li>
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                        <p class="card-text m-0">Pizza Shop One</p>
+                                                    </li>
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                        <p class="card-text">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                                            <i class="fa-regular fa-star"></i>
+                                                        </p>
+                                                    </li>
+                                                    <li class="list-group-item d-flex">
+                                                        <p class="card-text">
+                                                            <div class="btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar with button groups">
+                                                                <div class="btn-group" role="group" aria-label="First group">
+                                                                    <button id="food-size_1" data-price="250" type="button" class="btn mt-1 price__change btn-sm btn-outline-danger"><i class="fa-solid fa-s"></i></button>
+                                                                    <button id="food-size_1" data-price="450" type="button" class="btn mt-1 price__change ms-1 btn-sm btn-outline-danger"><i class="fa-solid fa-m"></i></button>
+                                                                    <button id="food-size_1" data-price="550" type="button" class="btn mt-1 price__change ms-1 btn-sm btn-outline-danger"><i class="fa-solid fa-l"></i></button>
+                                                                </div>
+                                                            </div>
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- changes -->
+                                <!-- changes -->
+                                <div class="card card__dashed">
+                                    <div class="row g-0">
+                                        <div class="col-md-4 item__img">
+                                            <img src="img/pizza/pizza-two.png" class="img-fluid rounded-circle" alt="Beef Pizza">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <ul class="list-group">
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center gap-1">
+                                                        <h5 class="card-title fw-bold">Beef Pizza</h5><span class="badge bg-danger rounded-pill">BDT 250</span>
+                                                    </li>
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                        <p class="card-text m-0">Pizza Shop two</p>
+                                                    </li>
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                        <p class="card-text">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                                            <i class="fa-regular fa-star"></i>
+                                                            <i class="fa-regular fa-star"></i>
+                                                        </p>
+                                                    </li>
+                                                    <li class="list-group-item d-flex">
+                                                        <p class="card-text">
+                                                            <div class="btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar with button groups">
+                                                                <div class="btn-group" role="group" aria-label="First group">
+                                                                    <button type="button" class="btn mt-1 btn-sm btn-outline-danger"><i class="fa-solid fa-s"></i></button>
+                                                                    <button type="button" class="btn mt-1 ms-1 btn-sm btn-outline-danger"><i class="fa-solid fa-m"></i></button>
+                                                                    <button type="button" class="btn mt-1 ms-1 btn-sm btn-outline-danger"><i class="fa-solid fa-l"></i></button>
+                                                                </div>
+                                                            </div>
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- changes -->
+                                <!-- changes -->
+                                <div class="card card__dashed">
+                                    <div class="row g-0">
+                                        <div class="col-md-4 item__img">
+                                            <img src="img/pizza/pizza-three.png" class="img-fluid rounded-circle" alt="Periperi Pizza">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <ul class="list-group">
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center gap-1">
+                                                        <h5 class="card-title fw-bold">Periperi Pizza</h5><span class="badge bg-danger rounded-pill">BDT 200</span>
+                                                    </li>
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                        <p class="card-text m-0">Pizza Shop three</p>
+                                                    </li>
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                        <p class="card-text">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                                        </p>
+                                                    </li>
+                                                    <li class="list-group-item d-flex">
+                                                        <p class="card-text">
+                                                            <div class="btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar with button groups">
+                                                                <div class="btn-group" role="group" aria-label="First group">
+                                                                    <button type="button" class="btn mt-1 btn-sm btn-outline-danger"><i class="fa-solid fa-s"></i></button>
+                                                                    <button type="button" class="btn mt-1 ms-1 btn-sm btn-outline-danger"><i class="fa-solid fa-m"></i></button>
+                                                                    <button type="button" class="btn mt-1 ms-1 btn-sm btn-outline-danger"><i class="fa-solid fa-l"></i></button>
+                                                                </div>
+                                                            </div>
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- changes -->
+                                <!-- changes -->
+                                <div class="card card__dashed">
+                                    <div class="row g-0">
+                                        <div class="col-md-4 item__img">
+                                            <img src="img/pizza/pizza-four.png" class="img-fluid rounded-circle" alt="Vegetable Pizza">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <ul class="list-group">
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center gap-1">
+                                                        <h5 class="card-title fw-bold">Vegetable Pizza</h5><span class="badge bg-danger rounded-pill">BDT 250</span>
+                                                    </li>
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                        <p class="card-text m-0">Pizza Shop Four</p>
+                                                    </li>
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                        <p class="card-text">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                                            <i class="fa-regular fa-star"></i>
+                                                            <i class="fa-regular fa-star"></i>
+                                                            <i class="fa-regular fa-star"></i>
+                                                        </p>
+                                                    </li>
+                                                    <li class="list-group-item d-flex">
+                                                        <p class="card-text">
+                                                            <div class="btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar with button groups">
+                                                                <div class="btn-group" role="group" aria-label="First group">
+                                                                    <button type="button" class="btn mt-1 btn-sm btn-outline-danger"><i class="fa-solid fa-s"></i></button>
+                                                                    <button type="button" class="btn mt-1 ms-1 btn-sm btn-outline-danger"><i class="fa-solid fa-m"></i></button>
+                                                                    <button type="button" class="btn mt-1 ms-1 btn-sm btn-outline-danger"><i class="fa-solid fa-l"></i></button>
+                                                                </div>
+                                                            </div>
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- changes -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="img/menu/burger-menu.jpg" class="card-img-top" alt="..." />
                             <div class="card-body">
                                 <!-- changes -->
                                 <div class="card card__dashed">
@@ -77,7 +253,7 @@
                                 <div class="card card__dashed">
                                     <div class="row g-0">
                                         <div class="col-md-4 item__img">
-                                            <img src="img/pizza/pizza.jpeg" class="img-fluid rounded-circle" alt="Beef Pizza">
+                                            <img src="img/pizza/pizza-two.png" class="img-fluid rounded-circle" alt="Beef Pizza">
                                         </div>
                                         <div class="col-md-8">
                                             <div class="card-body">
@@ -118,7 +294,7 @@
                                 <div class="card card__dashed">
                                     <div class="row g-0">
                                         <div class="col-md-4 item__img">
-                                            <img src="img/pizza/pizza.jpeg" class="img-fluid rounded-circle" alt="Periperi Pizza">
+                                            <img src="img/pizza/pizza-three.png" class="img-fluid rounded-circle" alt="Periperi Pizza">
                                         </div>
                                         <div class="col-md-8">
                                             <div class="card-body">
@@ -159,7 +335,7 @@
                                 <div class="card card__dashed">
                                     <div class="row g-0">
                                         <div class="col-md-4 item__img">
-                                            <img src="img/pizza/pizza.jpeg" class="img-fluid rounded-circle" alt="Vegetable Pizza">
+                                            <img src="img/pizza/pizza-four.png" class="img-fluid rounded-circle" alt="Vegetable Pizza">
                                         </div>
                                         <div class="col-md-8">
                                             <div class="card-body">
@@ -201,27 +377,172 @@
                     </div>
                     <div class="col">
                         <div class="card">
-                            <img src="img/menu/burger-menu.jpg" class="card-img-top" alt="..." />
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">
-                                    This is a longer card with supporting text below as a
-                                    natural lead-in to additional content. This content is a
-                                    little bit longer.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
                             <img src="img/menu/pasta-menu.jpg" class="card-img-top" alt="Pasta Menu" />
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">
-                                    This is a longer card with supporting text below as a
-                                    natural lead-in to additional content. This content is a
-                                    little bit longer.
-                                </p>
+                                <!-- changes -->
+                                <div class="card card__dashed">
+                                    <div class="row g-0">
+                                        <div class="col-md-4 item__img">
+                                            <img src="img/pizza/pizza.jpeg" class="img-fluid rounded-circle" alt="Chicken Pizza">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <ul class="list-group">
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center gap-1">
+                                                        <h5 class="card-title fw-bold">Chicken Pizza</h5><span class="badge bg-danger rounded-pill">BDT 250</span>
+                                                    </li>
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                        <p class="card-text m-0">Pizza Shop One</p>
+                                                    </li>
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                        <p class="card-text">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                                            <i class="fa-regular fa-star"></i>
+                                                        </p>
+                                                    </li>
+                                                    <li class="list-group-item d-flex">
+                                                        <p class="card-text">
+                                                            <div class="btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar with button groups">
+                                                                <div class="btn-group" role="group" aria-label="First group">
+                                                                    <button type="button" class="btn mt-1 btn-sm btn-outline-danger"><i class="fa-solid fa-s"></i></button>
+                                                                    <button type="button" class="btn mt-1 ms-1 btn-sm btn-outline-danger"><i class="fa-solid fa-m"></i></button>
+                                                                    <button type="button" class="btn mt-1 ms-1 btn-sm btn-outline-danger"><i class="fa-solid fa-l"></i></button>
+                                                                </div>
+                                                            </div>
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- changes -->
+                                <!-- changes -->
+                                <div class="card card__dashed">
+                                    <div class="row g-0">
+                                        <div class="col-md-4 item__img">
+                                            <img src="img/pizza/pizza-two.png" class="img-fluid rounded-circle" alt="Beef Pizza">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <ul class="list-group">
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center gap-1">
+                                                        <h5 class="card-title fw-bold">Beef Pizza</h5><span class="badge bg-danger rounded-pill">BDT 250</span>
+                                                    </li>
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                        <p class="card-text m-0">Pizza Shop two</p>
+                                                    </li>
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                        <p class="card-text">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                                            <i class="fa-regular fa-star"></i>
+                                                            <i class="fa-regular fa-star"></i>
+                                                        </p>
+                                                    </li>
+                                                    <li class="list-group-item d-flex">
+                                                        <p class="card-text">
+                                                            <div class="btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar with button groups">
+                                                                <div class="btn-group" role="group" aria-label="First group">
+                                                                    <button type="button" class="btn mt-1 btn-sm btn-outline-danger"><i class="fa-solid fa-s"></i></button>
+                                                                    <button type="button" class="btn mt-1 ms-1 btn-sm btn-outline-danger"><i class="fa-solid fa-m"></i></button>
+                                                                    <button type="button" class="btn mt-1 ms-1 btn-sm btn-outline-danger"><i class="fa-solid fa-l"></i></button>
+                                                                </div>
+                                                            </div>
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- changes -->
+                                <!-- changes -->
+                                <div class="card card__dashed">
+                                    <div class="row g-0">
+                                        <div class="col-md-4 item__img">
+                                            <img src="img/pizza/pizza-three.png" class="img-fluid rounded-circle" alt="Periperi Pizza">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <ul class="list-group">
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center gap-1">
+                                                        <h5 class="card-title fw-bold">Periperi Pizza</h5><span class="badge bg-danger rounded-pill">BDT 200</span>
+                                                    </li>
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                        <p class="card-text m-0">Pizza Shop three</p>
+                                                    </li>
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                        <p class="card-text">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                                        </p>
+                                                    </li>
+                                                    <li class="list-group-item d-flex">
+                                                        <p class="card-text">
+                                                            <div class="btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar with button groups">
+                                                                <div class="btn-group" role="group" aria-label="First group">
+                                                                    <button type="button" class="btn mt-1 btn-sm btn-outline-danger"><i class="fa-solid fa-s"></i></button>
+                                                                    <button type="button" class="btn mt-1 ms-1 btn-sm btn-outline-danger"><i class="fa-solid fa-m"></i></button>
+                                                                    <button type="button" class="btn mt-1 ms-1 btn-sm btn-outline-danger"><i class="fa-solid fa-l"></i></button>
+                                                                </div>
+                                                            </div>
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- changes -->
+                                <!-- changes -->
+                                <div class="card card__dashed">
+                                    <div class="row g-0">
+                                        <div class="col-md-4 item__img">
+                                            <img src="img/pizza/pizza-four.png" class="img-fluid rounded-circle" alt="Vegetable Pizza">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <ul class="list-group">
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center gap-1">
+                                                        <h5 class="card-title fw-bold">Vegetable Pizza</h5><span class="badge bg-danger rounded-pill">BDT 250</span>
+                                                    </li>
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                        <p class="card-text m-0">Pizza Shop Four</p>
+                                                    </li>
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                        <p class="card-text">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                                            <i class="fa-regular fa-star"></i>
+                                                            <i class="fa-regular fa-star"></i>
+                                                            <i class="fa-regular fa-star"></i>
+                                                        </p>
+                                                    </li>
+                                                    <li class="list-group-item d-flex">
+                                                        <p class="card-text">
+                                                            <div class="btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar with button groups">
+                                                                <div class="btn-group" role="group" aria-label="First group">
+                                                                    <button type="button" class="btn mt-1 btn-sm btn-outline-danger"><i class="fa-solid fa-s"></i></button>
+                                                                    <button type="button" class="btn mt-1 ms-1 btn-sm btn-outline-danger"><i class="fa-solid fa-m"></i></button>
+                                                                    <button type="button" class="btn mt-1 ms-1 btn-sm btn-outline-danger"><i class="fa-solid fa-l"></i></button>
+                                                                </div>
+                                                            </div>
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- changes -->
                             </div>
                         </div>
                     </div>
@@ -229,12 +550,170 @@
                         <div class="card">
                             <img src="img/menu/barbeque-menu.jpg" class="card-img-top" alt="Barbeque Items" />
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">
-                                    This is a longer card with supporting text below as a
-                                    natural lead-in to additional content. This content is a
-                                    little bit longer.
-                                </p>
+                                <!-- changes -->
+                                <div class="card card__dashed">
+                                    <div class="row g-0">
+                                        <div class="col-md-4 item__img">
+                                            <img src="img/pizza/pizza.jpeg" class="img-fluid rounded-circle" alt="Chicken Pizza">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <ul class="list-group">
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center gap-1">
+                                                        <h5 class="card-title fw-bold">Chicken Pizza</h5><span class="badge bg-danger rounded-pill">BDT 250</span>
+                                                    </li>
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                        <p class="card-text m-0">Pizza Shop One</p>
+                                                    </li>
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                        <p class="card-text">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                                            <i class="fa-regular fa-star"></i>
+                                                        </p>
+                                                    </li>
+                                                    <li class="list-group-item d-flex">
+                                                        <p class="card-text">
+                                                            <div class="btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar with button groups">
+                                                                <div class="btn-group" role="group" aria-label="First group">
+                                                                    <button type="button" class="btn mt-1 btn-sm btn-outline-danger"><i class="fa-solid fa-s"></i></button>
+                                                                    <button type="button" class="btn mt-1 ms-1 btn-sm btn-outline-danger"><i class="fa-solid fa-m"></i></button>
+                                                                    <button type="button" class="btn mt-1 ms-1 btn-sm btn-outline-danger"><i class="fa-solid fa-l"></i></button>
+                                                                </div>
+                                                            </div>
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- changes -->
+                                <!-- changes -->
+                                <div class="card card__dashed">
+                                    <div class="row g-0">
+                                        <div class="col-md-4 item__img">
+                                            <img src="img/pizza/pizza-two.png" class="img-fluid rounded-circle" alt="Beef Pizza">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <ul class="list-group">
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center gap-1">
+                                                        <h5 class="card-title fw-bold">Beef Pizza</h5><span class="badge bg-danger rounded-pill">BDT 250</span>
+                                                    </li>
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                        <p class="card-text m-0">Pizza Shop two</p>
+                                                    </li>
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                        <p class="card-text">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                                            <i class="fa-regular fa-star"></i>
+                                                            <i class="fa-regular fa-star"></i>
+                                                        </p>
+                                                    </li>
+                                                    <li class="list-group-item d-flex">
+                                                        <p class="card-text">
+                                                            <div class="btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar with button groups">
+                                                                <div class="btn-group" role="group" aria-label="First group">
+                                                                    <button type="button" class="btn mt-1 btn-sm btn-outline-danger"><i class="fa-solid fa-s"></i></button>
+                                                                    <button type="button" class="btn mt-1 ms-1 btn-sm btn-outline-danger"><i class="fa-solid fa-m"></i></button>
+                                                                    <button type="button" class="btn mt-1 ms-1 btn-sm btn-outline-danger"><i class="fa-solid fa-l"></i></button>
+                                                                </div>
+                                                            </div>
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- changes -->
+                                <!-- changes -->
+                                <div class="card card__dashed">
+                                    <div class="row g-0">
+                                        <div class="col-md-4 item__img">
+                                            <img src="img/pizza/pizza-three.png" class="img-fluid rounded-circle" alt="Periperi Pizza">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <ul class="list-group">
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center gap-1">
+                                                        <h5 class="card-title fw-bold">Periperi Pizza</h5><span class="badge bg-danger rounded-pill">BDT 200</span>
+                                                    </li>
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                        <p class="card-text m-0">Pizza Shop three</p>
+                                                    </li>
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                        <p class="card-text">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                                        </p>
+                                                    </li>
+                                                    <li class="list-group-item d-flex">
+                                                        <p class="card-text">
+                                                            <div class="btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar with button groups">
+                                                                <div class="btn-group" role="group" aria-label="First group">
+                                                                    <button type="button" class="btn mt-1 btn-sm btn-outline-danger"><i class="fa-solid fa-s"></i></button>
+                                                                    <button type="button" class="btn mt-1 ms-1 btn-sm btn-outline-danger"><i class="fa-solid fa-m"></i></button>
+                                                                    <button type="button" class="btn mt-1 ms-1 btn-sm btn-outline-danger"><i class="fa-solid fa-l"></i></button>
+                                                                </div>
+                                                            </div>
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- changes -->
+                                <!-- changes -->
+                                <div class="card card__dashed">
+                                    <div class="row g-0">
+                                        <div class="col-md-4 item__img">
+                                            <img src="img/pizza/pizza-four.png" class="img-fluid rounded-circle" alt="Vegetable Pizza">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <ul class="list-group">
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center gap-1">
+                                                        <h5 class="card-title fw-bold">Vegetable Pizza</h5><span class="badge bg-danger rounded-pill">BDT 250</span>
+                                                    </li>
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                        <p class="card-text m-0">Pizza Shop Four</p>
+                                                    </li>
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                        <p class="card-text">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                                            <i class="fa-regular fa-star"></i>
+                                                            <i class="fa-regular fa-star"></i>
+                                                            <i class="fa-regular fa-star"></i>
+                                                        </p>
+                                                    </li>
+                                                    <li class="list-group-item d-flex">
+                                                        <p class="card-text">
+                                                            <div class="btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar with button groups">
+                                                                <div class="btn-group" role="group" aria-label="First group">
+                                                                    <button type="button" class="btn mt-1 btn-sm btn-outline-danger"><i class="fa-solid fa-s"></i></button>
+                                                                    <button type="button" class="btn mt-1 ms-1 btn-sm btn-outline-danger"><i class="fa-solid fa-m"></i></button>
+                                                                    <button type="button" class="btn mt-1 ms-1 btn-sm btn-outline-danger"><i class="fa-solid fa-l"></i></button>
+                                                                </div>
+                                                            </div>
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- changes -->
                             </div>
                         </div>
                     </div>
@@ -243,12 +722,169 @@
                             <img src="img/menu/sushi-menu.jpg" class="card-img-top" alt="Sushi Menu" />
                             <div class="card-body">
                                 <!-- changes -->
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">
-                                    This is a longer card with supporting text below as a
-                                    natural lead-in to additional content. This content is a
-                                    little bit longer.
-                                </p>
+                                <div class="card card__dashed">
+                                    <div class="row g-0">
+                                        <div class="col-md-4 item__img">
+                                            <img src="img/pizza/pizza.jpeg" class="img-fluid rounded-circle" alt="Chicken Pizza">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <ul class="list-group">
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center gap-1">
+                                                        <h5 class="card-title fw-bold">Chicken Pizza</h5><span class="badge bg-danger rounded-pill">BDT 250</span>
+                                                    </li>
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                        <p class="card-text m-0">Pizza Shop One</p>
+                                                    </li>
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                        <p class="card-text">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                                            <i class="fa-regular fa-star"></i>
+                                                        </p>
+                                                    </li>
+                                                    <li class="list-group-item d-flex">
+                                                        <p class="card-text">
+                                                            <div class="btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar with button groups">
+                                                                <div class="btn-group" role="group" aria-label="First group">
+                                                                    <button type="button" class="btn mt-1 btn-sm btn-outline-danger"><i class="fa-solid fa-s"></i></button>
+                                                                    <button type="button" class="btn mt-1 ms-1 btn-sm btn-outline-danger"><i class="fa-solid fa-m"></i></button>
+                                                                    <button type="button" class="btn mt-1 ms-1 btn-sm btn-outline-danger"><i class="fa-solid fa-l"></i></button>
+                                                                </div>
+                                                            </div>
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- changes -->
+                                <!-- changes -->
+                                <div class="card card__dashed">
+                                    <div class="row g-0">
+                                        <div class="col-md-4 item__img">
+                                            <img src="img/pizza/pizza-two.png" class="img-fluid rounded-circle" alt="Beef Pizza">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <ul class="list-group">
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center gap-1">
+                                                        <h5 class="card-title fw-bold">Beef Pizza</h5><span class="badge bg-danger rounded-pill">BDT 250</span>
+                                                    </li>
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                        <p class="card-text m-0">Pizza Shop two</p>
+                                                    </li>
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                        <p class="card-text">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                                            <i class="fa-regular fa-star"></i>
+                                                            <i class="fa-regular fa-star"></i>
+                                                        </p>
+                                                    </li>
+                                                    <li class="list-group-item d-flex">
+                                                        <p class="card-text">
+                                                            <div class="btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar with button groups">
+                                                                <div class="btn-group" role="group" aria-label="First group">
+                                                                    <button type="button" class="btn mt-1 btn-sm btn-outline-danger"><i class="fa-solid fa-s"></i></button>
+                                                                    <button type="button" class="btn mt-1 ms-1 btn-sm btn-outline-danger"><i class="fa-solid fa-m"></i></button>
+                                                                    <button type="button" class="btn mt-1 ms-1 btn-sm btn-outline-danger"><i class="fa-solid fa-l"></i></button>
+                                                                </div>
+                                                            </div>
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- changes -->
+                                <!-- changes -->
+                                <div class="card card__dashed">
+                                    <div class="row g-0">
+                                        <div class="col-md-4 item__img">
+                                            <img src="img/pizza/pizza-three.png" class="img-fluid rounded-circle" alt="Periperi Pizza">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <ul class="list-group">
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center gap-1">
+                                                        <h5 class="card-title fw-bold">Periperi Pizza</h5><span class="badge bg-danger rounded-pill">BDT 200</span>
+                                                    </li>
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                        <p class="card-text m-0">Pizza Shop three</p>
+                                                    </li>
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                        <p class="card-text">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                                        </p>
+                                                    </li>
+                                                    <li class="list-group-item d-flex">
+                                                        <p class="card-text">
+                                                            <div class="btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar with button groups">
+                                                                <div class="btn-group" role="group" aria-label="First group">
+                                                                    <button type="button" class="btn mt-1 btn-sm btn-outline-danger"><i class="fa-solid fa-s"></i></button>
+                                                                    <button type="button" class="btn mt-1 ms-1 btn-sm btn-outline-danger"><i class="fa-solid fa-m"></i></button>
+                                                                    <button type="button" class="btn mt-1 ms-1 btn-sm btn-outline-danger"><i class="fa-solid fa-l"></i></button>
+                                                                </div>
+                                                            </div>
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- changes -->
+                                <!-- changes -->
+                                <div class="card card__dashed">
+                                    <div class="row g-0">
+                                        <div class="col-md-4 item__img">
+                                            <img src="img/pizza/pizza-four.png" class="img-fluid rounded-circle" alt="Vegetable Pizza">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <ul class="list-group">
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center gap-1">
+                                                        <h5 class="card-title fw-bold">Vegetable Pizza</h5><span class="badge bg-danger rounded-pill">BDT 250</span>
+                                                    </li>
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                        <p class="card-text m-0">Pizza Shop Four</p>
+                                                    </li>
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                        <p class="card-text">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                                            <i class="fa-regular fa-star"></i>
+                                                            <i class="fa-regular fa-star"></i>
+                                                            <i class="fa-regular fa-star"></i>
+                                                        </p>
+                                                    </li>
+                                                    <li class="list-group-item d-flex">
+                                                        <p class="card-text">
+                                                            <div class="btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar with button groups">
+                                                                <div class="btn-group" role="group" aria-label="First group">
+                                                                    <button type="button" class="btn mt-1 btn-sm btn-outline-danger"><i class="fa-solid fa-s"></i></button>
+                                                                    <button type="button" class="btn mt-1 ms-1 btn-sm btn-outline-danger"><i class="fa-solid fa-m"></i></button>
+                                                                    <button type="button" class="btn mt-1 ms-1 btn-sm btn-outline-danger"><i class="fa-solid fa-l"></i></button>
+                                                                </div>
+                                                            </div>
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- changes -->
                             </div>
                         </div>
                     </div>
@@ -256,12 +892,170 @@
                         <div class="card">
                             <img src="img/menu/sea-food-menu.jpg" class="card-img-top" alt="Sea Food" />
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">
-                                    This is a longer card with supporting text below as a
-                                    natural lead-in to additional content. This content is a
-                                    little bit longer.
-                                </p>
+                                <!-- changes -->
+                                <div class="card card__dashed">
+                                    <div class="row g-0">
+                                        <div class="col-md-4 item__img">
+                                            <img src="img/pizza/pizza.jpeg" class="img-fluid rounded-circle" alt="Chicken Pizza">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <ul class="list-group">
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center gap-1">
+                                                        <h5 class="card-title fw-bold">Chicken Pizza</h5><span class="badge bg-danger rounded-pill">BDT 250</span>
+                                                    </li>
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                        <p class="card-text m-0">Pizza Shop One</p>
+                                                    </li>
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                        <p class="card-text">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                                            <i class="fa-regular fa-star"></i>
+                                                        </p>
+                                                    </li>
+                                                    <li class="list-group-item d-flex">
+                                                        <p class="card-text">
+                                                            <div class="btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar with button groups">
+                                                                <div class="btn-group" role="group" aria-label="First group">
+                                                                    <button type="button" class="btn mt-1 btn-sm btn-outline-danger"><i class="fa-solid fa-s"></i></button>
+                                                                    <button type="button" class="btn mt-1 ms-1 btn-sm btn-outline-danger"><i class="fa-solid fa-m"></i></button>
+                                                                    <button type="button" class="btn mt-1 ms-1 btn-sm btn-outline-danger"><i class="fa-solid fa-l"></i></button>
+                                                                </div>
+                                                            </div>
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- changes -->
+                                <!-- changes -->
+                                <div class="card card__dashed">
+                                    <div class="row g-0">
+                                        <div class="col-md-4 item__img">
+                                            <img src="img/pizza/pizza-two.png" class="img-fluid rounded-circle" alt="Beef Pizza">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <ul class="list-group">
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center gap-1">
+                                                        <h5 class="card-title fw-bold">Beef Pizza</h5><span class="badge bg-danger rounded-pill">BDT 250</span>
+                                                    </li>
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                        <p class="card-text m-0">Pizza Shop two</p>
+                                                    </li>
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                        <p class="card-text">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                                            <i class="fa-regular fa-star"></i>
+                                                            <i class="fa-regular fa-star"></i>
+                                                        </p>
+                                                    </li>
+                                                    <li class="list-group-item d-flex">
+                                                        <p class="card-text">
+                                                            <div class="btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar with button groups">
+                                                                <div class="btn-group" role="group" aria-label="First group">
+                                                                    <button type="button" class="btn mt-1 btn-sm btn-outline-danger"><i class="fa-solid fa-s"></i></button>
+                                                                    <button type="button" class="btn mt-1 ms-1 btn-sm btn-outline-danger"><i class="fa-solid fa-m"></i></button>
+                                                                    <button type="button" class="btn mt-1 ms-1 btn-sm btn-outline-danger"><i class="fa-solid fa-l"></i></button>
+                                                                </div>
+                                                            </div>
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- changes -->
+                                <!-- changes -->
+                                <div class="card card__dashed">
+                                    <div class="row g-0">
+                                        <div class="col-md-4 item__img">
+                                            <img src="img/pizza/pizza-three.png" class="img-fluid rounded-circle" alt="Periperi Pizza">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <ul class="list-group">
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center gap-1">
+                                                        <h5 class="card-title fw-bold">Periperi Pizza</h5><span class="badge bg-danger rounded-pill">BDT 200</span>
+                                                    </li>
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                        <p class="card-text m-0">Pizza Shop three</p>
+                                                    </li>
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                        <p class="card-text">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                                        </p>
+                                                    </li>
+                                                    <li class="list-group-item d-flex">
+                                                        <p class="card-text">
+                                                            <div class="btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar with button groups">
+                                                                <div class="btn-group" role="group" aria-label="First group">
+                                                                    <button type="button" class="btn mt-1 btn-sm btn-outline-danger"><i class="fa-solid fa-s"></i></button>
+                                                                    <button type="button" class="btn mt-1 ms-1 btn-sm btn-outline-danger"><i class="fa-solid fa-m"></i></button>
+                                                                    <button type="button" class="btn mt-1 ms-1 btn-sm btn-outline-danger"><i class="fa-solid fa-l"></i></button>
+                                                                </div>
+                                                            </div>
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- changes -->
+                                <!-- changes -->
+                                <div class="card card__dashed">
+                                    <div class="row g-0">
+                                        <div class="col-md-4 item__img">
+                                            <img src="img/pizza/pizza-four.png" class="img-fluid rounded-circle" alt="Vegetable Pizza">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <ul class="list-group">
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center gap-1">
+                                                        <h5 class="card-title fw-bold">Vegetable Pizza</h5><span class="badge bg-danger rounded-pill">BDT 250</span>
+                                                    </li>
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                        <p class="card-text m-0">Pizza Shop Four</p>
+                                                    </li>
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                        <p class="card-text">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                                            <i class="fa-regular fa-star"></i>
+                                                            <i class="fa-regular fa-star"></i>
+                                                            <i class="fa-regular fa-star"></i>
+                                                        </p>
+                                                    </li>
+                                                    <li class="list-group-item d-flex">
+                                                        <p class="card-text">
+                                                            <div class="btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar with button groups">
+                                                                <div class="btn-group" role="group" aria-label="First group">
+                                                                    <button type="button" class="btn mt-1 btn-sm btn-outline-danger"><i class="fa-solid fa-s"></i></button>
+                                                                    <button type="button" class="btn mt-1 ms-1 btn-sm btn-outline-danger"><i class="fa-solid fa-m"></i></button>
+                                                                    <button type="button" class="btn mt-1 ms-1 btn-sm btn-outline-danger"><i class="fa-solid fa-l"></i></button>
+                                                                </div>
+                                                            </div>
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- changes -->
                             </div>
                         </div>
                     </div>
@@ -269,12 +1063,170 @@
                         <div class="card">
                             <img src="img/menu/ice-cream-menu.jpg" class="card-img-top" alt="Ice cream" />
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">
-                                    This is a longer card with supporting text below as a
-                                    natural lead-in to additional content. This content is a
-                                    little bit longer.
-                                </p>
+                                <!-- changes -->
+                                <div class="card card__dashed">
+                                    <div class="row g-0">
+                                        <div class="col-md-4 item__img">
+                                            <img src="img/pizza/pizza.jpeg" class="img-fluid rounded-circle" alt="Chicken Pizza">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <ul class="list-group">
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center gap-1">
+                                                        <h5 class="card-title fw-bold">Chicken Pizza</h5><span class="badge bg-danger rounded-pill">BDT 250</span>
+                                                    </li>
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                        <p class="card-text m-0">Pizza Shop One</p>
+                                                    </li>
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                        <p class="card-text">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                                            <i class="fa-regular fa-star"></i>
+                                                        </p>
+                                                    </li>
+                                                    <li class="list-group-item d-flex">
+                                                        <p class="card-text">
+                                                            <div class="btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar with button groups">
+                                                                <div class="btn-group" role="group" aria-label="First group">
+                                                                    <button type="button" class="btn mt-1 btn-sm btn-outline-danger"><i class="fa-solid fa-s"></i></button>
+                                                                    <button type="button" class="btn mt-1 ms-1 btn-sm btn-outline-danger"><i class="fa-solid fa-m"></i></button>
+                                                                    <button type="button" class="btn mt-1 ms-1 btn-sm btn-outline-danger"><i class="fa-solid fa-l"></i></button>
+                                                                </div>
+                                                            </div>
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- changes -->
+                                <!-- changes -->
+                                <div class="card card__dashed">
+                                    <div class="row g-0">
+                                        <div class="col-md-4 item__img">
+                                            <img src="img/pizza/pizza-two.png" class="img-fluid rounded-circle" alt="Beef Pizza">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <ul class="list-group">
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center gap-1">
+                                                        <h5 class="card-title fw-bold">Beef Pizza</h5><span class="badge bg-danger rounded-pill">BDT 250</span>
+                                                    </li>
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                        <p class="card-text m-0">Pizza Shop two</p>
+                                                    </li>
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                        <p class="card-text">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                                            <i class="fa-regular fa-star"></i>
+                                                            <i class="fa-regular fa-star"></i>
+                                                        </p>
+                                                    </li>
+                                                    <li class="list-group-item d-flex">
+                                                        <p class="card-text">
+                                                            <div class="btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar with button groups">
+                                                                <div class="btn-group" role="group" aria-label="First group">
+                                                                    <button type="button" class="btn mt-1 btn-sm btn-outline-danger"><i class="fa-solid fa-s"></i></button>
+                                                                    <button type="button" class="btn mt-1 ms-1 btn-sm btn-outline-danger"><i class="fa-solid fa-m"></i></button>
+                                                                    <button type="button" class="btn mt-1 ms-1 btn-sm btn-outline-danger"><i class="fa-solid fa-l"></i></button>
+                                                                </div>
+                                                            </div>
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- changes -->
+                                <!-- changes -->
+                                <div class="card card__dashed">
+                                    <div class="row g-0">
+                                        <div class="col-md-4 item__img">
+                                            <img src="img/pizza/pizza-three.png" class="img-fluid rounded-circle" alt="Periperi Pizza">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <ul class="list-group">
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center gap-1">
+                                                        <h5 class="card-title fw-bold">Periperi Pizza</h5><span class="badge bg-danger rounded-pill">BDT 200</span>
+                                                    </li>
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                        <p class="card-text m-0">Pizza Shop three</p>
+                                                    </li>
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                        <p class="card-text">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                                        </p>
+                                                    </li>
+                                                    <li class="list-group-item d-flex">
+                                                        <p class="card-text">
+                                                            <div class="btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar with button groups">
+                                                                <div class="btn-group" role="group" aria-label="First group">
+                                                                    <button type="button" class="btn mt-1 btn-sm btn-outline-danger"><i class="fa-solid fa-s"></i></button>
+                                                                    <button type="button" class="btn mt-1 ms-1 btn-sm btn-outline-danger"><i class="fa-solid fa-m"></i></button>
+                                                                    <button type="button" class="btn mt-1 ms-1 btn-sm btn-outline-danger"><i class="fa-solid fa-l"></i></button>
+                                                                </div>
+                                                            </div>
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- changes -->
+                                <!-- changes -->
+                                <div class="card card__dashed">
+                                    <div class="row g-0">
+                                        <div class="col-md-4 item__img">
+                                            <img src="img/pizza/pizza-four.png" class="img-fluid rounded-circle" alt="Vegetable Pizza">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <ul class="list-group">
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center gap-1">
+                                                        <h5 class="card-title fw-bold">Vegetable Pizza</h5><span class="badge bg-danger rounded-pill">BDT 250</span>
+                                                    </li>
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                        <p class="card-text m-0">Pizza Shop Four</p>
+                                                    </li>
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                        <p class="card-text">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                                            <i class="fa-regular fa-star"></i>
+                                                            <i class="fa-regular fa-star"></i>
+                                                            <i class="fa-regular fa-star"></i>
+                                                        </p>
+                                                    </li>
+                                                    <li class="list-group-item d-flex">
+                                                        <p class="card-text">
+                                                            <div class="btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar with button groups">
+                                                                <div class="btn-group" role="group" aria-label="First group">
+                                                                    <button type="button" class="btn mt-1 btn-sm btn-outline-danger"><i class="fa-solid fa-s"></i></button>
+                                                                    <button type="button" class="btn mt-1 ms-1 btn-sm btn-outline-danger"><i class="fa-solid fa-m"></i></button>
+                                                                    <button type="button" class="btn mt-1 ms-1 btn-sm btn-outline-danger"><i class="fa-solid fa-l"></i></button>
+                                                                </div>
+                                                            </div>
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- changes -->
                             </div>
                         </div>
                     </div>
@@ -282,12 +1234,170 @@
                         <div class="card">
                             <img src="img/menu/drinks-juice-menu.jpg" class="card-img-top" alt="Drinks and Juice" />
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">
-                                    This is a longer card with supporting text below as a
-                                    natural lead-in to additional content. This content is a
-                                    little bit longer.
-                                </p>
+                                <!-- changes -->
+                                <div class="card card__dashed">
+                                    <div class="row g-0">
+                                        <div class="col-md-4 item__img">
+                                            <img src="img/pizza/pizza.jpeg" class="img-fluid rounded-circle" alt="Chicken Pizza">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <ul class="list-group">
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center gap-1">
+                                                        <h5 class="card-title fw-bold">Chicken Pizza</h5><span class="badge bg-danger rounded-pill">BDT 250</span>
+                                                    </li>
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                        <p class="card-text m-0">Pizza Shop One</p>
+                                                    </li>
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                        <p class="card-text">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                                            <i class="fa-regular fa-star"></i>
+                                                        </p>
+                                                    </li>
+                                                    <li class="list-group-item d-flex">
+                                                        <p class="card-text">
+                                                            <div class="btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar with button groups">
+                                                                <div class="btn-group" role="group" aria-label="First group">
+                                                                    <button type="button" class="btn mt-1 btn-sm btn-outline-danger"><i class="fa-solid fa-s"></i></button>
+                                                                    <button type="button" class="btn mt-1 ms-1 btn-sm btn-outline-danger"><i class="fa-solid fa-m"></i></button>
+                                                                    <button type="button" class="btn mt-1 ms-1 btn-sm btn-outline-danger"><i class="fa-solid fa-l"></i></button>
+                                                                </div>
+                                                            </div>
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- changes -->
+                                <!-- changes -->
+                                <div class="card card__dashed">
+                                    <div class="row g-0">
+                                        <div class="col-md-4 item__img">
+                                            <img src="img/pizza/pizza-two.png" class="img-fluid rounded-circle" alt="Beef Pizza">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <ul class="list-group">
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center gap-1">
+                                                        <h5 class="card-title fw-bold">Beef Pizza</h5><span class="badge bg-danger rounded-pill">BDT 250</span>
+                                                    </li>
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                        <p class="card-text m-0">Pizza Shop two</p>
+                                                    </li>
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                        <p class="card-text">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                                            <i class="fa-regular fa-star"></i>
+                                                            <i class="fa-regular fa-star"></i>
+                                                        </p>
+                                                    </li>
+                                                    <li class="list-group-item d-flex">
+                                                        <p class="card-text">
+                                                            <div class="btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar with button groups">
+                                                                <div class="btn-group" role="group" aria-label="First group">
+                                                                    <button type="button" class="btn mt-1 btn-sm btn-outline-danger"><i class="fa-solid fa-s"></i></button>
+                                                                    <button type="button" class="btn mt-1 ms-1 btn-sm btn-outline-danger"><i class="fa-solid fa-m"></i></button>
+                                                                    <button type="button" class="btn mt-1 ms-1 btn-sm btn-outline-danger"><i class="fa-solid fa-l"></i></button>
+                                                                </div>
+                                                            </div>
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- changes -->
+                                <!-- changes -->
+                                <div class="card card__dashed">
+                                    <div class="row g-0">
+                                        <div class="col-md-4 item__img">
+                                            <img src="img/pizza/pizza-three.png" class="img-fluid rounded-circle" alt="Periperi Pizza">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <ul class="list-group">
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center gap-1">
+                                                        <h5 class="card-title fw-bold">Periperi Pizza</h5><span class="badge bg-danger rounded-pill">BDT 200</span>
+                                                    </li>
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                        <p class="card-text m-0">Pizza Shop three</p>
+                                                    </li>
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                        <p class="card-text">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                                        </p>
+                                                    </li>
+                                                    <li class="list-group-item d-flex">
+                                                        <p class="card-text">
+                                                            <div class="btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar with button groups">
+                                                                <div class="btn-group" role="group" aria-label="First group">
+                                                                    <button type="button" class="btn mt-1 btn-sm btn-outline-danger"><i class="fa-solid fa-s"></i></button>
+                                                                    <button type="button" class="btn mt-1 ms-1 btn-sm btn-outline-danger"><i class="fa-solid fa-m"></i></button>
+                                                                    <button type="button" class="btn mt-1 ms-1 btn-sm btn-outline-danger"><i class="fa-solid fa-l"></i></button>
+                                                                </div>
+                                                            </div>
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- changes -->
+                                <!-- changes -->
+                                <div class="card card__dashed">
+                                    <div class="row g-0">
+                                        <div class="col-md-4 item__img">
+                                            <img src="img/pizza/pizza-four.png" class="img-fluid rounded-circle" alt="Vegetable Pizza">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <ul class="list-group">
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center gap-1">
+                                                        <h5 class="card-title fw-bold">Vegetable Pizza</h5><span class="badge bg-danger rounded-pill">BDT 250</span>
+                                                    </li>
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                        <p class="card-text m-0">Pizza Shop Four</p>
+                                                    </li>
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                        <p class="card-text">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                                            <i class="fa-regular fa-star"></i>
+                                                            <i class="fa-regular fa-star"></i>
+                                                            <i class="fa-regular fa-star"></i>
+                                                        </p>
+                                                    </li>
+                                                    <li class="list-group-item d-flex">
+                                                        <p class="card-text">
+                                                            <div class="btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar with button groups">
+                                                                <div class="btn-group" role="group" aria-label="First group">
+                                                                    <button type="button" class="btn mt-1 btn-sm btn-outline-danger"><i class="fa-solid fa-s"></i></button>
+                                                                    <button type="button" class="btn mt-1 ms-1 btn-sm btn-outline-danger"><i class="fa-solid fa-m"></i></button>
+                                                                    <button type="button" class="btn mt-1 ms-1 btn-sm btn-outline-danger"><i class="fa-solid fa-l"></i></button>
+                                                                </div>
+                                                            </div>
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- changes -->
                             </div>
                         </div>
                     </div>
@@ -295,12 +1405,170 @@
                         <div class="card">
                             <img src="img/menu/coffee-menu.jpg" class="card-img-top" alt="Coffee" />
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">
-                                    This is a longer card with supporting text below as a
-                                    natural lead-in to additional content. This content is a
-                                    little bit longer.
-                                </p>
+                                <!-- changes -->
+                                <div class="card card__dashed">
+                                    <div class="row g-0">
+                                        <div class="col-md-4 item__img">
+                                            <img src="img/pizza/pizza.jpeg" class="img-fluid rounded-circle" alt="Chicken Pizza">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <ul class="list-group">
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center gap-1">
+                                                        <h5 class="card-title fw-bold">Chicken Pizza</h5><span class="badge bg-danger rounded-pill">BDT 250</span>
+                                                    </li>
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                        <p class="card-text m-0">Pizza Shop One</p>
+                                                    </li>
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                        <p class="card-text">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                                            <i class="fa-regular fa-star"></i>
+                                                        </p>
+                                                    </li>
+                                                    <li class="list-group-item d-flex">
+                                                        <p class="card-text">
+                                                            <div class="btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar with button groups">
+                                                                <div class="btn-group" role="group" aria-label="First group">
+                                                                    <button type="button" class="btn mt-1 btn-sm btn-outline-danger"><i class="fa-solid fa-s"></i></button>
+                                                                    <button type="button" class="btn mt-1 ms-1 btn-sm btn-outline-danger"><i class="fa-solid fa-m"></i></button>
+                                                                    <button type="button" class="btn mt-1 ms-1 btn-sm btn-outline-danger"><i class="fa-solid fa-l"></i></button>
+                                                                </div>
+                                                            </div>
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- changes -->
+                                <!-- changes -->
+                                <div class="card card__dashed">
+                                    <div class="row g-0">
+                                        <div class="col-md-4 item__img">
+                                            <img src="img/pizza/pizza-two.png" class="img-fluid rounded-circle" alt="Beef Pizza">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <ul class="list-group">
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center gap-1">
+                                                        <h5 class="card-title fw-bold">Beef Pizza</h5><span class="badge bg-danger rounded-pill">BDT 250</span>
+                                                    </li>
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                        <p class="card-text m-0">Pizza Shop two</p>
+                                                    </li>
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                        <p class="card-text">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                                            <i class="fa-regular fa-star"></i>
+                                                            <i class="fa-regular fa-star"></i>
+                                                        </p>
+                                                    </li>
+                                                    <li class="list-group-item d-flex">
+                                                        <p class="card-text">
+                                                            <div class="btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar with button groups">
+                                                                <div class="btn-group" role="group" aria-label="First group">
+                                                                    <button type="button" class="btn mt-1 btn-sm btn-outline-danger"><i class="fa-solid fa-s"></i></button>
+                                                                    <button type="button" class="btn mt-1 ms-1 btn-sm btn-outline-danger"><i class="fa-solid fa-m"></i></button>
+                                                                    <button type="button" class="btn mt-1 ms-1 btn-sm btn-outline-danger"><i class="fa-solid fa-l"></i></button>
+                                                                </div>
+                                                            </div>
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- changes -->
+                                <!-- changes -->
+                                <div class="card card__dashed">
+                                    <div class="row g-0">
+                                        <div class="col-md-4 item__img">
+                                            <img src="img/pizza/pizza-three.png" class="img-fluid rounded-circle" alt="Periperi Pizza">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <ul class="list-group">
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center gap-1">
+                                                        <h5 class="card-title fw-bold">Periperi Pizza</h5><span class="badge bg-danger rounded-pill">BDT 200</span>
+                                                    </li>
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                        <p class="card-text m-0">Pizza Shop three</p>
+                                                    </li>
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                        <p class="card-text">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                                        </p>
+                                                    </li>
+                                                    <li class="list-group-item d-flex">
+                                                        <p class="card-text">
+                                                            <div class="btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar with button groups">
+                                                                <div class="btn-group" role="group" aria-label="First group">
+                                                                    <button type="button" class="btn mt-1 btn-sm btn-outline-danger"><i class="fa-solid fa-s"></i></button>
+                                                                    <button type="button" class="btn mt-1 ms-1 btn-sm btn-outline-danger"><i class="fa-solid fa-m"></i></button>
+                                                                    <button type="button" class="btn mt-1 ms-1 btn-sm btn-outline-danger"><i class="fa-solid fa-l"></i></button>
+                                                                </div>
+                                                            </div>
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- changes -->
+                                <!-- changes -->
+                                <div class="card card__dashed">
+                                    <div class="row g-0">
+                                        <div class="col-md-4 item__img">
+                                            <img src="img/pizza/pizza-four.png" class="img-fluid rounded-circle" alt="Vegetable Pizza">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <ul class="list-group">
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center gap-1">
+                                                        <h5 class="card-title fw-bold">Vegetable Pizza</h5><span class="badge bg-danger rounded-pill">BDT 250</span>
+                                                    </li>
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                        <p class="card-text m-0">Pizza Shop Four</p>
+                                                    </li>
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                        <p class="card-text">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                                            <i class="fa-regular fa-star"></i>
+                                                            <i class="fa-regular fa-star"></i>
+                                                            <i class="fa-regular fa-star"></i>
+                                                        </p>
+                                                    </li>
+                                                    <li class="list-group-item d-flex">
+                                                        <p class="card-text">
+                                                            <div class="btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar with button groups">
+                                                                <div class="btn-group" role="group" aria-label="First group">
+                                                                    <button type="button" class="btn mt-1 btn-sm btn-outline-danger"><i class="fa-solid fa-s"></i></button>
+                                                                    <button type="button" class="btn mt-1 ms-1 btn-sm btn-outline-danger"><i class="fa-solid fa-m"></i></button>
+                                                                    <button type="button" class="btn mt-1 ms-1 btn-sm btn-outline-danger"><i class="fa-solid fa-l"></i></button>
+                                                                </div>
+                                                            </div>
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- changes -->
                             </div>
                         </div>
                     </div>
@@ -317,5 +1585,6 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"
         ></script>
+    <script src="menu.js"></script>
     </body>
 </html>
