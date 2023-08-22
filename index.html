@@ -15,7 +15,7 @@
         <!-- Nav Section two-->
     </header>
     <main>
-        <!-- Slider Section -->
+        <!-- Banner Slider Section Starts-->
         <section class="slider__section">
             <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
@@ -25,7 +25,7 @@
                 </div>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="img/slide-one.jpg" class="d-block w-100" alt="...">
+                    <img src="img/banner/slide-one.jpg" class="d-block w-100" alt="Banner">
                     <div class="carousel-caption d-none d-md-block">
                         <p>Special Fast food</p>
                         <h2>KINGS OF QUALITY FOOD</h2>
@@ -34,7 +34,7 @@
                     </div>
                   </div>
                   <div class="carousel-item">
-                    <img src="img/slide-two.jpg" class="d-block w-100" alt="...">
+                    <img src="img/banner/slide-two.jpg" class="d-block w-100" alt="Banner">
                     <div class="carousel-caption d-none d-md-block">
                         <p>Special Fast food</p>
                         <h2>KINGS OF QUALITY FOOD</h2>
@@ -43,7 +43,7 @@
                     </div>
                   </div>
                   <div class="carousel-item">
-                    <img src="img/slide-three.jpg" class="d-block w-100" alt="...">
+                    <img src="img/banner/slide-three.jpg" class="d-block w-100" alt="Banner">
                     <div class="carousel-caption d-none d-md-block">
                         <p>Special Fast food</p>
                         <h2>KINGS OF QUALITY FOOD</h2>
@@ -62,136 +62,140 @@
                 </button>
               </div>
         </section>
-        <!-- Delivery Section -->
-        <section>
-          <div class="row row-cols-1 row-cols-md-4 p-1 bg-light text-dark">
+        <!-- Banner Slider Section Ends-->
+        <!-- Services Section Starts -->
+        <section class="services__section">
+          <div class="row row-cols-1 row-cols-md-4 g-0">
             <div class="col">
-              <div class="card card__delivery mb-5 bg-light text-dark h-100">
-                <img src="/img/fast-food.png" class="card-img-top size" alt="Fast Foods">
-                <div class="card-body">
-                  <h5 class="card-title">Fast Foods</h5>
+              <div class="card service__card display__flex">
+                <img src="img/service/fast-food.png" class="card-img-top size" alt="Fast Foods">
+                <div class="card-body display__flex">
+                  <h5 class="card-title title">Fast Foods</h5>
                   <p class="card-text">100% Natural fast foods</p>
                 </div>
               </div>
             </div>
             <div class="col">
-              <div class="card card__delivery mb-5  bg-light text-dark h-100">
-                <img src="/img/home-delivery.png" class="card-img-top size" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Home Delivery</h5>
+              <!-- <div class="line"></div> -->
+              <div class="card service__card display__flex">
+                <img src="img/service/home-delivery.png" class="card-img-top size" alt="Home Delivery">
+                <div class="card-body display__flex">
+                  <h5 class="card-title title">Home Delivery</h5>
                   <p class="card-text">Free home delivery by 50</p>
                 </div>
               </div>
             </div>
             <div class="col">
-              <div class="card card__delivery mb-5  bg-light text-dark h-100">
-                <img src="/img/party.png" class="card-img-top size" alt="Fast Foods">
-                <div class="card-body">
-                  <h5 class="card-title">Party & Event</h5>
+              <!-- <div class="line"></div> -->
+              <div class="card service__card display__flex">
+                <img src="img/service/party.png" class="card-img-top size" alt="Fast Foods">
+                <div class="card-body display__flex">
+                  <h5 class="card-title title">Party & Event</h5>
                   <p class="card-text">100% Natural fast foods</p>
                 </div>
               </div>
             </div>
             <div class="col">
-              <div class="card card__delivery mb-5  bg-light text-dark h-100">
-                <img src="/img/budget.png" class="card-img-top size" alt="Budget Friendly">
-                <div class="card-body">
-                  <h5 class="card-title">Budget Friendly</h5>
+              <div class="card service__card display__flex">
+                <img src="img/service/budget.png" class="card-img-top size" alt="Budget Friendly">
+                <div class="card-body display__flex">
+                  <h5 class="card-title title">Budget Friendly</h5>
                   <p class="card-text">By prioritizing Efficiency</p>
                 </div>
               </div>
           </div>
         </section>
-        <!-- Feature Section -->
-
+        <!-- Services Section Ends -->
         <!-- Best Food For Family Section -->
-        <section class="best__food">
-            <div class="container-fluid">
-                <h6 class="text-center fw-bolder fs-5 mt-5 title__second">Best Food For Family</h6>
+        <section class="best__category-section">
+            <div class="container">
+                <h6 class="text-center fw-bolder fs-5 mt-5 title">Best Food For Family</h6>
                 <h2 class="text-center fs-1 fw-bold mb-5">Choose your best Category</h2>
-                <div class="container-fluid display__grid-6">
-                    <div class="card card__category center" style="width: 12rem;">
-                        <img src="img/burger.jpeg" class="card-img-top category__img mt-5" alt="Category Image">
-                        <div class="card-body">
-                          <p class="card-text fw-bolder fs-5">Burger</p>
-                        </div>
+                <div class="container best__category-food">
+                    <div class="card best__category center">
+                        <img src="img/burger.jpeg" class="card-img-top category__img mt-4" alt="Category Image">
+                        <p class="card-text mt-2 mb-3 fs-5 fw-bolder">Burger</p>
                     </div>
-                    <div class="card center" style="width: 12rem;">
-                        <img src="img/pizza.jpeg" class="card-img-top category__img mt-5" alt="Category Image">
-                        <div class="card-body">
-                          <p class="card-text fw-bolder fs-5">Pizza</p>
-                        </div>
+                    <div class="card best__category center">
+                        <img src="img/pizza.jpeg" class="card-img-top category__img mt-4" alt="Category Image">
+                        <p class="card-text mt-2 mb-3 fs-5 fw-bolder">Pizza</p>
                     </div>
-                    <div class="card center" style="width: 12rem;">
-                        <img src="img/tandoori.jpeg" class="card-img-top category__img mt-5" alt="Category Image">
-                        <div class="card-body">
-                          <p class="card-text fw-bolder fs-5">Tandoori</p>
-                        </div>
+                    <div class="card best__category center">
+                        <img src="img/tandoori.jpeg" class="card-img-top category__img mt-4" alt="Category Image">
+                        <p class="card-text mt-2 mb-3 fs-5 fw-bolder">Tandoori</p>
                     </div>
-                    <div class="card center" style="width: 12rem;">
-                        <img src="img/pasta.jpeg" class="card-img-top category__img mt-5" alt="Category Image">
-                        <div class="card-body">
-                          <p class="card-text fw-bolder fs-5">Pasta</p>
-                        </div>
+                    <div class="card best__category center">
+                        <img src="img/pasta.jpeg" class="card-img-top category__img mt-4" alt="Category Image">
+                        <p class="card-text mt-2 mb-3 fs-5 fw-bolder">Pasta</p>
                     </div>
-                    <div class="card center" style="width: 12rem;">
-                        <img src="img/sea-food.jpeg" class="card-img-top category__img mt-5" alt="Category Image">
-                        <div class="card-body">
-                          <p class="card-text fw-bolder fs-5">Sea Food</p>
-                        </div>
+                    <div class="card best__category center">
+                        <img src="img/sea-food.jpeg" class="card-img-top category__img mt-4" alt="Category Image">
+                        <p class="card-text mt-2 mb-3 fs-5 fw-bolder">Sea Food</p>
                     </div>
-                    <div class="card center" style="width: 12rem;">
-                        <img src="img/barbecue.jpeg" class="card-img-top category__img mt-5" alt="Category Image">
-                        <div class="card-body">
-                          <p class="card-text fw-bolder fs-5">Barbecue</p>
-                        </div>
+                    <div class="card best__category center">
+                        <img src="img/barbecue.jpeg" class="card-img-top category__img mt-4" alt="Category Image">
+                        <p class="card-text mt-2 mb-3 fs-5 fw-bolder">Barbecue</p>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- About Company Section -->
-        <section class="about__us">
-          <div class="container px-4">
-            <div class="row gx-5">
+        <!-- About Company Section starts -->
+        <section class="about__us-section">
+          <div class="container">
+            <div class="row center">
               <div class="col">
-                <div class="p-3">
-                  <!-- image -->
-                  <img src="img/about-img-home.jpg" class="img-fluid mt-5" alt="About Image">
+                <div class="about__us-content">
+                    <h6 class="fw-bolder fs-5 mt-5 title mb-3">About Us</h6>
+                    <h2 class="fs-1 fw-bold mb-3">We always Tring Quality & Healthy Foods</h2>
+                    <p class="fs-6">Implies that the restaurant prioritizes the delivery
+                      of high quality And delicious meals to its customers. It emphasizes the</p>
+                    <div class="feature__icons">
+                      <div class="features">
+                        <img src="img/icons/delicious.png" alt="DELICIOUS">
+                        <p class="mt-2 fw-bold">DELICIOUS</p>
+                      </div>
+                      <div class="features">
+                        <img src="img/icons/fresh.png" alt="FRESH">
+                        <p class="mt-2 fw-bold">FRESH</p>
+                      </div>
+                      <div class="features">
+                        <img src="img/icons/best-price.png" alt="BEST PRICE">
+                        <p class="mt-2 fw-bold">BEST PRICE</p>
+                      </div>
+                    </div>
+                    <button class="btn btn-danger">Learn more</button>
                 </div>
               </div>
               <div class="col">
-                <div class="p-3 px-5">
-                  <!-- content -->
-                    <h6 class="fw-bolder fs-5 mt-5 title__second mb-3">About Company</h6>
-                    <h2 class="fs-1 fw-bold mb-5">We always Tring Quality Healthy Foods</h2>
-                    <p class="fs-6">Implies that the restaurant prioritizes the delivery of high quality And delicious meals to its customers. It emphasizes the</p>
-                    <div class="about__content">
-                      <div class="center about__content-center">
-                        <i class="fa-solid fa-check"></i> <p class="mt-3 me-5">Food Items management</p>
-                        <i class="fa-solid fa-check"></i> <p class="mt-3">Table reservation</p>
-                      </div>
-                      <div class="center  about__content-center">
-                        <i class="fa-solid fa-check"></i> <p class="mt-3 me-4">Customer feedback portal</p>                        </p>
-                        <i class="fa-solid fa-check"></i> <p class="mt-3">Location-based services</p>
-                      </div>
-                    </div>
-                    <button class=" btn btn-danger px-3 py-2 mt-3 me-5">See Details <i class="fa-solid fa-arrow-right"></i></button>
+                <div class="about__us-img">
+                  <img src="img/about-us.jpg" class="img-fluid" alt="About Image">
                 </div>
               </div>
             </div>
           </div>
         </section>
+        <!-- About Company Section ends-->
+
         <!-- Popular Food Menu Section -->
-        <section class="food__menu">
+        <section class="popular__food-section">
           <div class="container food__menu-res">
-            <h6 class="text-center fw-bolder fs-5 mt-5 title__second">Popular Food Menu</h6>
+            <h6 class="text-center fw-bolder fs-5 mt-5 title">Popular Food Menu</h6>
             <h2 class="text-center fs-1 fw-bold mb-5">Choose your best menu</h2>
+            <div class="popular__food-menus center">
+              <div class="menu">
+                
+              </div>
+              <div class="menu-img">
+                <img src="img/best-menu-img.png" alt="">
+              </div>
+              <div class="menu">
+
+              </div>
+            </div>
           </div>
-          
         </section>
         <!-- Booking Your Seat Section -->
         <section class="book__seat">
-
         </section>
         <!-- Why Choose Us Section -->
         <!-- Testimonials Section -->
