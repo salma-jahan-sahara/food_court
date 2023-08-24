@@ -66,8 +66,3 @@ body{
 .item__img img:hover{
     box-shadow: 0 0 5px 2px var(--bs-red);
 }
-
-.btn_select{
-    background-color:  var(--bs-red) !important;
-    color: white !important;
-}

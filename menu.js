@@ -1,6 +1,14 @@
 // const price__change
 $(".price__change").click(function(){
-    // alert($(this).attr("data-price"));
+    var id = $(this).attr("id").match(/(\d+)/g)[0];
     var price = $(this).attr("data-price");
-    $("#food-price_1").html(price);
+    $("#food-price_"+id).html(price);
+
+    var selector = '[id="food-size_' + id + '"]';
+    $(selector).removeClass("btn_select");
+
+    selector = '[id="food-size_' + id + '"][data-price="' + price + '"]';
+    $(selector).addClass("btn_select");
+
+    $(selector).blur();
 });
