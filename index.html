@@ -187,7 +187,6 @@
           </div>
         </section>
         <!-- About Company Section ends-->
-
         <!-- Popular Food Menu Section -->
         <section class="popular__food-section">
           <div class="container">
@@ -327,7 +326,10 @@
               </figcaption>
             </figure>
             <div class="container overflow-hidden center">
-              <div class="row gx-5">
+              <button class="left__slide-icon" id="prev">
+                <i class="fa-solid fa-arrow-left"></i>
+              </button>
+              <div class="row gx-5" id="shopList">
                 <div class="col-lg-3 col-md-4 col-sm-12">
                   <div class="card shadow card__hover text-center center" style="width: 16rem;">
                     <img src="img/shop_logo/delight-cakes.jpg" class="card-img-top mt-4" alt="Shop">
@@ -365,7 +367,7 @@
                   </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-12">
-                  <div class="card card__hover shadow text-center center px-5" style="width: 16rem;">
+                  <div class="card card__hover shadow text-center center" style="width: 16rem;">
                     <img src="img/shop_logo/delight-cakes.jpg" class="card-img-top mt-4" alt="Shop">
                     <div class="card-body">
                       <h5 class="card-title">Waffle Up</h5>
@@ -401,19 +403,21 @@
                   </div>
                 </div>
               </div>
+              <button class="right__slide-icon" id="next">
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
             </div>
           </div>
         </section>
         <!-- Booking Your Seat Section -->
         <section class="reserve__section">
-          
         </section>
         <!-- Testimonials Section -->
         <!-- Slider Footer Section -->
         <section class="sponsors__section">
           <div class="container-fluid">
             <div class="sponsor-text">
-              <p>Global 5K+ Happy Sponsors With us</p>
+              <p class="title">Global 5K+ Happy Sponsors With us</p>
             </div>
             <div class="container__sponsor">
               <div class="sponsor__slider-track">
@@ -514,7 +518,7 @@
         <!-- Footer Section -->
         <!-- Footer Section -->
     </footer>
+    <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
 </body>
 </html>
