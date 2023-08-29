@@ -108,11 +108,11 @@
   /* height: 90vh; */
 }
 .about__us-content {
-    /* background-color: black; */
-    padding: 5px 25px;
-    margin: 45px 5px;
+  /* background-color: black; */
+  padding: 5px 25px;
+  margin: 45px 5px;
 }
-.about__us-img img{
+.about__us-img img {
   /* background-color: #9d1926;  */
 }
 .feature__icons {
@@ -168,6 +168,7 @@
 }
 .list-group-item {
   border: none !important;
+  /* background-color: #0d6efd; */
   padding: 2px 0 !important;
   margin: 0px 10px;
 }
@@ -180,7 +181,6 @@ p {
 }
 .list-group-item .badge {
   margin-left: 7px !important;
-
   background-color: #9d1926 !important;
 }
 .list-group-item i {
@@ -351,7 +351,7 @@ p {
   align-items: flex-start;
   gap: 5px;
 }
-.customer__review-text{
+.customer__review-text {
   background-color: #9d1926;
   font-size: small;
   display: flex;
@@ -359,11 +359,11 @@ p {
   align-items: flex-start;
 }
 /* Blog  */
-.blog__news{
+.blog__news {
   background-color: #6f42c1;
   /* height: 100vh; */
 }
-.display-flex{
+.display-flex {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -372,10 +372,43 @@ p {
 }
 
 /* Reservation */
-.reserve__section{
+.reserve__section {
   background-color: yellow;
 }
 /* Sponsor */
-.sponsors__section{
+.sponsors__section {
   background-color: #d63384;
+}
+/*Top rated Restaurant Section */
+.top__restaurant-section {
+  background-color: lightblue;
+}
+.top__restaurant-section img {
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  outline: none;
+  border: none;
+}
+.top__restaurant-section img:hover {
+  box-shadow: 0 0 3px 2px var(--bs-red);
+}
+.card-footer i {
+  color: var(--bs-red);
+  height: 30px;
+  width: 30px;
+  border-radius: 30px;
+  border: 1px solid var(--bs-red);
+  margin: 5px 5px;
+  padding: 8px 2px;
+}
+.card-footer i:hover {
+  color: var(--bs-white);
+  background-color: var(--bs-red);
+  /* outline: 1px solid var(--bs-white); */
+}
+.card__hover h5 {
+  color: var(--bs-red);
 }
