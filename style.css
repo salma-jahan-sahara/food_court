@@ -1,135 +1,141 @@
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Playfair+Display:wght@900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Playfair+Display:wght@900&display=swap");
 :root {
-    --bs-blue: #0d6efd;
-    --bs-indigo: #6610f2;
-    --bs-purple: #6f42c1;
-    --bs-pink: #d63384;
-    --bs-red: #9d1926;
-    --bs-orange: #fd7e14;
-    --bs-yellow: #ffc107;
-    --bs-green: #198754;
-    --bs-teal: #20c997;
-    --bs-cyan: #0dcaf0;
-    --bs-white: #fff;
-    --bs-gray: #6c757d;
-    --bs-gray-dark: #343a40;
-    --bs-primary: #0d6efd;
-    --bs-secondary: #6c757d;
-    --bs-success: #198754;
-    --bs-info: #0dcaf0;
-    --bs-warning: #ffc107;
-    --bs-danger: #dc3545;
-    --bs-light: #f8f9fa;
-    --bs-dark: #212529;
-    --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
-  }
+  --bs-blue: #0d6efd;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
+  --bs-red: #9d1926;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #ffc107;
+  --bs-green: #198754;
+  --bs-teal: #20c997;
+  --bs-cyan: #0dcaf0;
+  --bs-white: #fff;
+  --bs-gray: #6c757d;
+  --bs-gray-dark: #343a40;
+  --bs-primary: #0d6efd;
+  --bs-secondary: #6c757d;
+  --bs-success: #198754;
+  --bs-info: #0dcaf0;
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-light: #f8f9fa;
+  --bs-dark: #212529;
+  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+  --bs-gradient: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.15),
+    rgba(255, 255, 255, 0)
+  );
+}
 
-*
-{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 /* common classes */
-.display__flex{
+.display__flex {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.center{
+.center {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1rem;
 }
-.title{
-  font-family: 'Playfair Display', serif;
+.title {
+  font-family: "Playfair Display", serif;
   color: var(--bs-red);
 }
-.line{
-    height: 70px;
-    width: 1px;
-    background-color: var(--bs-secondary);
-    box-shadow: 0 0 1px 0px var(--bs-secondary);
+.line {
+  height: 70px;
+  width: 1px;
+  background-color: var(--bs-secondary);
+  box-shadow: 0 0 1px 0px var(--bs-secondary);
 }
 /* Services Section Starts */
-.services__section{
-  background-color: var(--bs-white);
+.services__section {
+  background-color: red;
+  /* background-color: var(--bs-white); */
   margin-bottom: 7rem;
 }
-.service__card{
-  border: none!important;
+.service__card {
+  border: none !important;
   padding: 15px 15px;
   /* background-color: var(--bs-dark); */
 }
-.size{
+.size {
   height: 80px;
-  width: 70px!important;
-  margin-left: 1rem!important;
-  margin-top: 3rem!important;
+  width: 70px !important;
+  margin-left: 1rem !important;
+  margin-top: 3rem !important;
 }
 /* Services Section Ends */
 
 /* Best Food For Family Section starts */
-.best__category-section{
-  /* background-color: #6c757d; */
-  height: 60vh;
+.best__category-section {
+  background-color: #6c757d;
 }
-.best__category:hover{
+.best__category:hover {
   border: 1px solid var(--bs-red);
-}
-.best__category-food{
-  display: grid;
-  grid-template-columns: repeat(6,1fr);
-  justify-content: space-evenly;
-  gap: 1rem
 }
 .best__category img {
   transition: transform 0.3s, box-shadow 0.3s; /* Adding transitions for smooth effect */
 }
-
-.best__category:hover img{
-  transform: scale(1.1); /* Scale the image by 10% on hover (you can adjust the value) */
+.best__category:hover img {
+  transform: scale(
+    1.1
+  ); /* Scale the image by 10% on hover (you can adjust the value) */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a box shadow on hover */
 }
-.card .category__img{
-  height: 100px;
-  width: 100px;
+.card .category__img {
+  height: 80px;
+  width: 80px;
   border-radius: 50%;
 }
 /* Best Food For Family Section  Ends */
-
 /* About Company Section starts */
-.about__us-section{
-  /* background-color: #198754; */
+.about__us-section {
+  background-color: #198754;
   /* height: 90vh; */
 }
-.about__us-content{
-  margin-left: 9rem;
+.about__us-content {
+    /* background-color: black; */
+    padding: 5px 25px;
+    margin: 45px 5px;
 }
-.feature__icons{
+.about__us-img img{
+  /* background-color: #9d1926;  */
+}
+.feature__icons {
   display: flex;
   justify-content: flex-start;
-  align-items: flex-start;
-  gap: 3rem;
+  align-items: center;
+  /* flex-direction: row; */
+  gap: 1rem;
   margin-top: 1rem;
 }
-.features{
+.features {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.features img{
-  height: 50px;
-  width: 50px;
-  border-radius: 50px;
+.features img {
+  height: 40px;
+  width: 40px;
+  border-radius: 40px;
   border: none;
 }
-.about__us-content .btn{
+.about__us-content .btn {
   border-radius: 20px;
   padding: 8px 20px;
   margin: 10px 0px;
@@ -137,69 +143,70 @@
 /* About Company Section ends */
 
 /* Popular Food Menu Section Starts  */
-.popular__food-section{
-  height: 100vh;
+.popular__food-section {
+  /* height: 100vh; */
+  background-color: green;
 }
-.popular__food-menus{
+.popular__food-menus {
   /* background-color: #198754; */
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
 }
-.menu-btn button{
+.menu-btn button {
   width: 2rem;
   padding: 3px 0px;
   margin: 1px 0px;
 }
-.menu-img img{
-  height: 400px;
-  width: 400px;
+.menu-img img {
+  /* height: 400px;
+  width: 400px; */
 }
-.card__dashed:hover{
-    border-bottom: 1px solid var(--bs-danger);
+.card__dashed:hover {
+  border-bottom: 1px solid var(--bs-danger);
 }
-.list-group-item{
-    border: none!important;
-    padding: 2px 0!important;
-    margin: 0px 10px;
+.list-group-item {
+  border: none !important;
+  padding: 2px 0 !important;
+  margin: 0px 10px;
 }
-.list-group-item p{
-  margin-bottom: 2px!important;
+.list-group-item p {
+  margin-bottom: 2px !important;
 }
-.list-group-item h5,p{
-  margin-left: 7px!important;
+.list-group-item h5,
+p {
+  margin-left: 7px !important;
 }
-.list-group-item .badge{
-  margin-left: 7px!important;
-  
-  background-color: #9d1926!important;
+.list-group-item .badge {
+  margin-left: 7px !important;
+
+  background-color: #9d1926 !important;
 }
-.list-group-item i{
+.list-group-item i {
   color: var(--bs-red);
 }
-.menu-btn i{
+.menu-btn i {
   color: #9d1926;
 }
-.menu img{
-    border: 1px solid var(--bs-secondary);
-    height: 80px;
-    width: 80px;
-    margin: 10px 18px;
-    object-fit: cover;
+.menu img {
+  border: 1px solid var(--bs-secondary);
+  height: 75px;
+  width: 75px;
+  margin: 10px 0px;
+  object-fit: cover;
 }
-.menu img:hover{
-    box-shadow: 0 0 5px 2px var(--bs-red);
+.menu img:hover {
+  box-shadow: 0 0 5px 2px var(--bs-red);
 }
-.btn_select{
-    background-color:  var(--bs-red) !important;
-    color: white !important;
+.btn_select {
+  background-color: var(--bs-red) !important;
+  color: white !important;
 }
-
 /* Popular Food Menu Section Ends  */
 
 /* OLD */
-.footer__slider p::before{
+.footer__slider p::before {
   content: " ";
   height: 10px;
   width: 100px;
@@ -208,7 +215,7 @@
 /* Style the container */
 .sponsor-text {
   position: relative;
-  text-align: center; /* Center-align the text */
+  text-align: center;
   margin-top: 50px;
 }
 
@@ -219,7 +226,7 @@
   position: absolute;
   width: 500px; /* Adjust the width of the lines */
   height: 2px; /* Adjust the height and thickness of the lines */
-  background-color: #D3D3D3; /* Line color */
+  background-color: #d3d3d3; /* Line color */
   top: 50%;
   transform: translateY(-50%);
 }
@@ -231,54 +238,53 @@
 .sponsor-text p::after {
   right: 0;
 }
-.container__sponsor{
+.container__sponsor {
   margin-top: 80px;
   height: 200px;
   overflow: hidden;
   position: relative;
   width: auto;
 }
-.container__sponsor .sponsor__slider-track{
+.container__sponsor .sponsor__slider-track {
   animation: scroll 40s linear infinite;
   display: flex;
-  width: calc(200px *14);
+  width: calc(200px * 14);
 }
 @keyframes scroll {
-  0%{
+  0% {
     transform: translate(0);
   }
-  100%{
+  100% {
     transform: translate(calc(-200px * 7));
   }
 }
-.display__grid-4{
+.display__grid-3 {
   display: grid;
-  grid-template-columns: repeat(4,auto);
-  justify-content: space-evenly;
+  grid-template-columns: repeat(3, auto);
+  justify-content: center;
+  align-items: center;
 }
 
 /* about Section */
-.about__content-center{
+.about__content-center {
   gap: 12px;
 }
-.about__us img{
+.about__us img {
   height: 450px;
   width: 450px;
   margin-left: 140px;
 }
-
-.left__menu img{
+.left__menu img {
   height: 100px;
   width: 100px;
-  border-radius: 50px!important;
+  border-radius: 50px !important;
   margin: 2rem 5rem;
   border: 5px solid #6c757d;
 }
-.left__menu-details{
+.left__menu-details {
   position: relative;
-  margin-top: 1rem!important;
+  margin-top: 1rem !important;
   /* background-color: #198754; */
-
 }
 .price__item {
   position: absolute;
@@ -290,7 +296,86 @@
   height: 32px;
   padding: 5px 6px;
 }
-.item-title{
+.item-title {
   color: var(--bs-gradient);
   font-family: var(--bs-font-monospace);
+}
+/* Testimonial Section */
+.testimonials__section {
+  background-color: #b7c7d7;
+  height: 100vh;
+}
+.customer__review-details {
+  background-color: #6c757d;
+}
+.customer__review-details img {
+  height: 85px;
+  width: 85px;
+  border: none;
+  border-radius: 50px;
+}
+.customer__review {
+  /* background-color: #9d1926; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.customer__review-details {
+  margin: 5px 5px;
+  padding: 10px 10px;
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+}
+.review__content {
+  /* background-color: bisque; */
+  margin: 2px 2px;
+  padding: 5px 5px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.ratings i {
+  color: var(--bs-red);
+  font-size: smaller;
+}
+.ratings {
+  margin: 1px 1px;
+  padding: 2px 2px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 5px;
+}
+.customer__review-text{
+  background-color: #9d1926;
+  font-size: small;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+/* Blog  */
+.blog__news{
+  background-color: #6f42c1;
+  /* height: 100vh; */
+}
+.display-flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-direction: row;
+}
+
+/* Reservation */
+.reserve__section{
+  background-color: yellow;
+}
+/* Sponsor */
+.sponsors__section{
+  background-color: #d63384;
 }
