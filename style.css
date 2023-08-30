@@ -383,7 +383,7 @@ p {
 .top__restaurant-section {
   /* background-color: lightblue; */
 }
-.top__restaurant-section button{
+.top__restaurant-section button {
   outline: none;
   border: none;
   transition: 0.5s;
@@ -442,4 +442,46 @@ p {
 .left__slide-icon i:hover {
   color: var(--bs-white);
   background-color: var(--bs-red);
+}
+.top__restaurant-section button{
+  background: none;
+}
+/* Daily Specials/Promotions */
+.promotions__section{
+  margin-top: 5rem;
+}
+.promotions {
+  background: url("img/banner/slide-three.jpg") center/cover no-repeat;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+  
+}
+.promotions button {
+  margin: 0px 80px;
+  margin-bottom: 25px;
+  padding: 10px 25px;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  font-weight: 700;
+  font-size: 15px;
+  text-transform: capitalize;
+  color: var(--bs-red);
+}
+.promotions button:hover{
+  background-color: var(--bs-red);
+  color: var(--bs-white);
+}
+.timer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+  border-radius: 10px;
+}
+.promotions p{
+  margin-top: -35px!important;
 }
