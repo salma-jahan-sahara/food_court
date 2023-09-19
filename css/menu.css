@@ -38,7 +38,7 @@ body{
     /* background-color: cadetblue; */
     margin-top: 5rem;
 }
-.title__second{
+.title{
     font-family: 'Playfair Display', serif;
     color: var(--bs-red);
 }
@@ -65,4 +65,9 @@ body{
 }
 .item__img img:hover{
     box-shadow: 0 0 5px 2px var(--bs-red);
+}
+
+.btn_select{
+    background-color:  var(--bs-red) !important;
+    color: white !important;
 }

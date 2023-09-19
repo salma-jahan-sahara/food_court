@@ -1,4 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Playfair+Display:wght@900&display=swap');
+:root {
+  --bs-blue: #0d6efd;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
+  --bs-red: #9d1926;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #ffc107;
+  --bs-green: #198754;
+  --bs-teal: #20c997;
+  --bs-cyan: #0dcaf0;
+  --bs-white: #fff;
+  --bs-gray: #6c757d;
+  --bs-gray-dark: #343a40;
+  --bs-primary: #0d6efd;
+  --bs-secondary: #6c757d;
+  --bs-success: #198754;
+  --bs-info: #0dcaf0;
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-light: #f8f9fa;
+  --bs-dark: #212529;
+  --bs-font-sans-serif: system-ui, -apple-system, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+    'Liberation Mono', 'Courier New', monospace;
+  --bs-gradient: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.15),
+    rgba(255, 255, 255, 0)
+  );
+}
 *{
     margin: 0;
     padding: 0;
@@ -7,6 +40,7 @@
 body{
     width: 100%;
 }
+
 /* Section one */
 
 .section__contact{
@@ -19,10 +53,8 @@ body{
     border: 1px solid #000;
     border-radius: 50px;
     margin-top: 40px;
-    /* background-color: red; */
 }
 .contact__title{
-    /* background-color: #fff; */
     margin-top: 15px;
     font-size: 20px;
     font-weight: bolder;
@@ -38,10 +70,8 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    box-shadow: 5px 5px 5px #D3D3D3;
 }
 .contact__options p{
-    /* background-color: chartreuse; */
     margin: 1px;
     font-size: 15px;
     font-weight: 500;
@@ -71,8 +101,7 @@ body{
 }
 
 .contact__us{
-    background-color: #D3D3D3;
-    
+    background-color: var(--bs-red);
     width: 80%;
     text-align: center;
 }
@@ -92,9 +121,13 @@ body{
 .msg button{
     padding: 10px 20px;
     border: none;
-    border-radius: 2px;
+    border-radius: 5px;
     font-size: small;
     margin: 15px 30px;
+}
+.msg button:hover{
+    background-color: var(--bs-red);
+    color: #fff;
 }
 .form input{
     border: none;
@@ -107,11 +140,12 @@ body{
     margin: 10px 0px;
 
 }
-/* .form input:focus{
-    border: 1px solid rgb(71, 2, 2);
-} */
+.form input{
+    outline: none;
+}
 .msg textarea{
     border: none;
+    outline: none;
     height: 150px;
     width: 755px;
     padding: 7px 13px;
